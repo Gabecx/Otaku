@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otaku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background: #74C365;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+            cursor: pointer; /* Added cursor style */
+        }
+        nav button {
+            margin-left: 1rem;
+            padding: 5px 10px;
+            background-color: #74C365;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #5a9e4d;
+        }
+        main {
+            padding: 20px;
+        }
+        article {
+            background: url('gogo.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 40px;
+            border-radius: 5px;
+            position: relative;
+        }
+        article::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+        article h2, article section {
+            position: relative;
+            z-index: 1;
+        }
+        aside {
+            background: #ddd;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        aside p, aside h3 {
+            margin-left: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            color: #555;
+        }
+        details {
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #9DC183;
+            color: white;
+            align-items: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #backToTop {
+            display: none;
+            padding: 10px 20px;
+            background-color: #74C365;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body.dark-mode {
+            background-color: #333;
+            color: #f9f9f9;    
+        }
+        article.dark-mode {
+            background: url('gigil.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        aside.dark-mode {
+            background-color: #333;
+            color: #f9f9f9;    
+        }
+
+        footer.dark-mode {
+            background: #9DC183;    
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="wipwip.png" alt="Otaku Logo" height="300">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <button id="toggleMode">Switch to Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Home</h1>
+            <article>
+                <h2>Kaichou Maid Sama / Maid Sama</h2>
+                <section>
+                    <h3>Description</h3>
+                    <p><mark>Ayazawa Misaki is a student in the first class of the second year of Hoshihwa High School</mark>. At the age of 16, she is the first female president of the student union of the school. As Hoshihwa High School was originally a boys’ school, and although it has been changed to a co-educational school, boys still account for the overwhelming majority, creating a situation where girls have no status. In order to protect the girls, Misaki fights against the arrogant boys with the ability of both civil and martial arts that is not inferior to the boys. Misaki's father disappeared from the surface of the earth and left her with nothing but debts. This irresponsible behavior left Misaki with psychological trauma and made her quite hate men (this is also the motivation for her to become stronger). In order to be able to help the struggling family, <mark>Misaki has been working part-time in a maid cafe</mark>. As they all say, there is no eternal secret, <mark>and this secret was discovered by Takumi Usui</mark>, who is popular among girls at the school and is also her own competitor.
+                </section>
+            </article>
+        </section>
+
+        <section id="about">
+            <h1>About</h1>
+            <aside>
+                <h3>Fun Fact about Maid Sama!</h3>
+                <p><mark>Maid Sama! is a Japanese manga series by Hiro Fujiwara</mark>. It was serialized in Hakusensha's monthly shōjo magazine LaLa from December 2005 to September 2013, with its chapters collected in 18 tankōbon volumes. A 26-episode anime adaptation produced by J.C.Staff aired between April and September 2010.</p>
+                <p><b>Author:</b> Hiro Fujiwara</p>
+                <p><b>Genre:</b> <mark>Shojo manga</mark></p>
+                <p><b>Demographic:</b> Shōjo</p>
+                <p><b>English network:</b> NA: Anime Network; SEA: Animax Asia</p>
+                <p><b>English publisher:</b> NA: Tokyopop (former); Viz Media</p>
+            </aside>
+
+            <figure>
+                <img src="maid.jpg" alt="Ayazawa Misaki and Takumi Usui">
+                <figcaption><b>Ayazawa Misaki and Takumi Usui</b></figcaption>
+            </figure>
+
+            <details>
+                <summary>Where to watch or read</summary>
+                <p><a href="https://www.crunchyroll.com/series/GRDK1GE1Y/maid-sama?srsltid=AfmBOorC8JtBzzH7s5pJ3DV-QWe8D8dS2nMcM0yVd_mNTOEctjUhoUnS">Crunchyroll</a></p>
+                <p><a href="https://www.bilibili.tv/en/video/4787098218273280">Bilibili</a></p>
+                <p><a href="https://maid-sama.com/">Manga Online</a></p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p id="contact">&copy; 2025 My Website | Contact: <a href="mailto:jessicagabica54@gmail.com">jessicagabica54@gmail.com</a></p>
+     	<button id="backToTop">Scroll back</button>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const article = document.querySelector('article');
+            const aside = document.querySelector('aside');
+            const footer = document.querySelector('footer');
+            const toggleButton = document.getElementById('toggleMode'); 
+            
+            body.classList.toggle('dark-mode');
+            article.classList.toggle('dark-mode');
+            aside.classList.toggle('dark-mode');
+            footer.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Light Mode';
+            } else {
+                toggleButton.textContent = 'Dark Mode';
+            }
+        }
+
+        document.getElementById('toggleMode').onclick = toggleDarkMode; 
+
+        function scrollToTop() { 
+            window.scrollTo({ 
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTopButton = document.getElementById('backToTop'); 
+            window.onscroll = function() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            };
+
+            backToTopButton.onclick = scrollToTop;
+        });
+    </script>
+</body>
+</html>
